@@ -12,7 +12,7 @@ namespace Prototype.Persona
 
         public static Director GetInstancia()
         {
-            return instancia ?? (instancia = new Director());
+            return instancia ?? (instancia = (Director) new Fabricas.FabricaDirector().RecopilarDatos(new Director()) );
         }
 
         public void LlamarTutor(Tutor tutor)

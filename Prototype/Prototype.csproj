@@ -53,6 +53,7 @@
     <Compile Include="Menu\Agregado\AgregadoTutor.cs" />
     <Compile Include="Menu\Agregado\AgregadoAdministrativo.cs" />
     <Compile Include="Menu\Agregado\AgregadoDirector.cs" />
+    <Compile Include="Menu\OpcionesListado.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persona\" />

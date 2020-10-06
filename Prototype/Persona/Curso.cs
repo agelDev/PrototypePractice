@@ -82,7 +82,7 @@ namespace Prototype.Persona
 
     public enum Grados
     {
-        Primaria1,
+        Primaria1 = 1,
         Primaria2,
         Primaria3,
         Primaria4,

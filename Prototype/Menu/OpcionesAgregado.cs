@@ -1,10 +1,12 @@
 ﻿using System;
 using Prototype.Fabricas;
+using Prototype.Persona;
 
 namespace Prototype.Menu
 {
     public partial class Menu
     {
+        static IFabricaPersonas fabrica;
         public static void OpcionesAgregado()
         {
             Console.Clear();
@@ -22,23 +24,36 @@ namespace Prototype.Menu
 
             string opcion = Console.ReadLine();
 
+            Persona.Persona nuevaPersona;
+
             switch (opcion)
             {
                 case "1":
-                    Agregado.AgregadoEstudiante.Crear(new FabricaEstudiante());
+                    fabrica = new FabricaEstudiante();
+                    nuevaPersona = fabrica.CrearPersona();
+                    ListaEstudiantes.Add(nuevaPersona);
                     break;
                 case "2":
-                    Agregado.AgregadoDocente.Crear(new FabricaDocente());
+                    fabrica = new FabricaDocente();
+                    nuevaPersona = fabrica.CrearPersona();
+                    ListaDocentes.Add(nuevaPersona);
                     break;
                 case "3":
-                    Agregado.AgregadoDirector.Crear(new FabricaDirector());
-                    break;
+                    fabrica = new FabricaDirector();
+                    fabrica.CrearPersona();
+                    return;
                 case "4":
-                    Agregado.AgregadoAdministrativo.Crear(new FabricaAdministrativo());
+                    fabrica = new FabricaAdministrativo();
+                    nuevaPersona = fabrica.CrearPersona();
+                    ListaAdministrativos.Add(nuevaPersona);
                     break;
                 default:
                     return;
             }
+
+            ListaPersonas.Add(nuevaPersona);
+
+
         }
     }
 }
