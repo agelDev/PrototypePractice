@@ -3,9 +3,9 @@ using Prototype.Persona;
 
 namespace Prototype.Fabricas
 {
-    public class FabricaDocente : IFabricaPersonas<Docente>
+    public class FabricaDocente : IFabricaPersonas
     {
-        public Docente CrearPersona()
+        public Persona.Persona CrearPersona()
         {
             return new Docente();
         }

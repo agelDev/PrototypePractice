@@ -3,9 +3,9 @@ using Prototype.Persona;
 
 namespace Prototype.Fabricas
 {
-    public class FabricaDirector : IFabricaPersonas<Director>
+    public class FabricaDirector : IFabricaPersonas
     {
-        public Director CrearPersona()
+        public Persona.Persona CrearPersona()
         {
             return Director.GetInstancia();
         }

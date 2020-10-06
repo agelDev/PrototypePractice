@@ -3,8 +3,8 @@ using Prototype.Persona;
 
 namespace Prototype.Fabricas
 {
-    public interface IFabricaPersonas<T> where T : Persona.Persona
+    public interface IFabricaPersonas
     {
-        T CrearPersona();
+        Persona.Persona CrearPersona();
     }
 }
