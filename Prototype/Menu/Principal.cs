@@ -5,6 +5,10 @@ namespace Prototype.Menu
 {
     public partial class Menu
     {
-        private IFabricaPersonas Fabrica = new FabricaEstudiante();
+        private IFabricaPersonas Fabrica;
+
+        public void MenuPrincipal() {
+
+}
     }
 }
