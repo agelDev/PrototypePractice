@@ -22,5 +22,12 @@ namespace Prototype.Persona
         {
             Console.WriteLine("Reuniendose con el director");
         }
+
+        public override string ToString()
+        {
+            string msg = "TUTOR\n\n";
+            msg += base.ToString();
+            return msg;
+        }
     }
 }

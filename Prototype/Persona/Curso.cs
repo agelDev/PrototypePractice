@@ -28,6 +28,56 @@ namespace Prototype.Persona
             if (grado < Grados.Egresado)
                 grado++;
         }
+
+        public override string ToString()
+        {
+            string msg = "";
+
+            switch (grado)
+            {
+                case Grados.Primaria1:
+                    msg = "1ro Primaria";
+                    break;
+                case Grados.Primaria2:
+                    msg = "2do Primaria";
+                    break;
+                case Grados.Primaria3:
+                    msg = "3ro Primaria";
+                    break;
+                case Grados.Primaria4:
+                    msg = "4to Primaria";
+                    break;
+                case Grados.Primaria5:
+                    msg = "5to Primaria";
+                    break;
+                case Grados.Primaria6:
+                    msg = "6to Primaria";
+                    break;
+                case Grados.Secundaria1:
+                    msg = "1ro Secundaria";
+                    break;
+                case Grados.Secundaria2:
+                    msg = "2do Secundaria";
+                    break;
+                case Grados.Secundaria3:
+                    msg = "3ro Secundaria";
+                    break;
+                case Grados.Secundaria4:
+                    msg = "4to Secundaria";
+                    break;
+                case Grados.Secundaria5:
+                    msg = "5to Secundaria";
+                    break;
+                case Grados.Secundaria6:
+                    msg = "6to Secundaria";
+                    break;
+                default:
+                    msg = "Egresado";
+                    break;
+            }
+
+            return msg;
+        }
     }
 
     public enum Grados

@@ -21,5 +21,12 @@ namespace Prototype.Persona
         {
             Console.WriteLine("Viendo el programa...");
         }
+
+        public override string ToString()
+        {
+            string msg = "ADMINISTRATIVO\n\n";
+            msg += base.ToString();
+            return msg;
+        }
     }
 }

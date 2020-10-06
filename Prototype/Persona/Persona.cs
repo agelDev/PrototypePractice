@@ -21,5 +21,18 @@ namespace Prototype.Persona
                     telefono = value;
             }
         }
+
+        public override string ToString()
+        {
+            string msg = "";
+
+            msg += $"Nombre: {Nombre}\n";
+            msg += $"Apellido: {Apellido}\n";
+            msg += $"Telefono: {Convert.ToString(Telefono)}\n";
+            msg += $"Fecha de Nacimiento: {FechaNac.Day}/{FechaNac.Month}/{FechaNac.Year}\n";
+            msg += $"Domicilio: #{Domicilio.Casa}, {Domicilio.Sector}\n";
+
+            return msg;
+        }
     }
 }

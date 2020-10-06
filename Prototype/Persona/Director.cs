@@ -19,5 +19,13 @@ namespace Prototype.Persona
         {
             Console.WriteLine($"Lamando a {tutor.Nombre} {tutor.Apellido}");
         }
+
+        public override string ToString()
+        {
+            string msg = "DOCENTE\n\n";
+            msg += base.ToString();
+            msg += Especializacion + "\n";
+            return msg;
+        }
     }
 }

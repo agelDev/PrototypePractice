@@ -51,5 +51,14 @@ namespace Prototype.Persona
             
             return newClone;
         }
+
+        public override string ToString()
+        {
+            string msg = "ESTUDIANTE\n\n";
+            msg += base.ToString();
+            msg += Curso.ToString();
+            msg += $"Tutor: \nNombre: {tutor.Nombre}  Telefono: {Convert.ToString(tutor.Telefono)}\n";
+            return msg;
+        }
     }
 }
