@@ -41,17 +41,24 @@
     <Compile Include="Persona\Docente.cs" />
     <Compile Include="Persona\Administrativo.cs" />
     <Compile Include="Fabricas\IFabricaPersonas.cs" />
-    <Compile Include="Fabricas\FabricaAlumno.cs" />
+    <Compile Include="Fabricas\FabricaEstudiante.cs" />
     <Compile Include="Fabricas\FabricaDocente.cs" />
     <Compile Include="Fabricas\FabricaDirector.cs" />
     <Compile Include="Fabricas\FabricaAdministrativo.cs" />
     <Compile Include="Fabricas\FabricaTutor.cs" />
     <Compile Include="Menu\Principal.cs" />
+    <Compile Include="Menu\OpcionesAgregado.cs" />
+    <Compile Include="Menu\Agregado\AgregadoEstudiante.cs" />
+    <Compile Include="Menu\Agregado\AgregadoDocente.cs" />
+    <Compile Include="Menu\Agregado\AgregadoTutor.cs" />
+    <Compile Include="Menu\Agregado\AgregadoAdministrativo.cs" />
+    <Compile Include="Menu\Agregado\AgregadoDirector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persona\" />
     <Folder Include="Fabricas\" />
     <Folder Include="Menu\" />
+    <Folder Include="Menu\Agregado\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

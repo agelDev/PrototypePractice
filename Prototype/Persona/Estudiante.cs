@@ -3,7 +3,7 @@ namespace Prototype.Persona
 {
     public class Estudiante : Persona, ICloneable
     {
-        private Curso curso = null;
+        public Curso Curso { get;  set; } = null;
         private Tutor tutor = null;
         public Tutor Tutor { set { tutor = value; } }
 
@@ -23,13 +23,13 @@ namespace Prototype.Persona
 
         public Grados Grado
         {
-            get { return curso.Grado; }
+            get { return Curso.Grado; }
         }
 
         public void Promover()
         {
-            if (curso != null)
-                curso.Promover();
+            if (Curso != null)
+                Curso.Promover();
         }
 
         public object Clone()
@@ -47,7 +47,7 @@ namespace Prototype.Persona
 
             newClone.FechaNac = new DateTime(FechaNac.Year, FechaNac.Month, FechaNac.Day);
             newClone.Domicilio = new Domicilio(Domicilio.Casa, Domicilio.Sector);
-            newClone.curso = new Curso(Grado);
+            newClone.Curso = new Curso(Grado);
             
             return newClone;
         }

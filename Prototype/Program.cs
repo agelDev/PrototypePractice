@@ -1,4 +1,5 @@
 ﻿using System;
+using Prototype.Menu;
 
 namespace Prototype
 {
@@ -6,7 +7,20 @@ namespace Prototype
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            bool seguir;
+
+            do
+            {
+                Menu.Menu.MenuPrincipal();
+
+                Console.Clear();
+
+                Console.Write("Continuar? (S) ");
+                string opcion = Console.ReadLine();
+
+                seguir = opcion.ToLower() == "s";
+
+            } while (seguir);
         }
     }
 }

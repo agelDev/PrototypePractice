@@ -7,6 +7,11 @@ namespace Prototype.Persona
         private readonly Grados gradoInicio;
         private Grados grado;
 
+        public Curso(int numero) : this((Grados)numero)
+        {
+            
+        }
+
         public Curso(Grados grado)
         {
             gradoInicio = grado;
