@@ -46,10 +46,12 @@
     <Compile Include="Fabricas\FabricaDirector.cs" />
     <Compile Include="Fabricas\FabricaAdministrativo.cs" />
     <Compile Include="Fabricas\FabricaTutor.cs" />
+    <Compile Include="Menu\Principal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persona\" />
     <Folder Include="Fabricas\" />
+    <Folder Include="Menu\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
