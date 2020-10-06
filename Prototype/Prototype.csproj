@@ -40,9 +40,16 @@
     <Compile Include="Persona\Director.cs" />
     <Compile Include="Persona\Docente.cs" />
     <Compile Include="Persona\Administrativo.cs" />
+    <Compile Include="Fabricas\IFabricaPersonas.cs" />
+    <Compile Include="Fabricas\FabricaAlumno.cs" />
+    <Compile Include="Fabricas\FabricaDocente.cs" />
+    <Compile Include="Fabricas\FabricaDirector.cs" />
+    <Compile Include="Fabricas\FabricaAdministrativo.cs" />
+    <Compile Include="Fabricas\FabricaTutor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persona\" />
+    <Folder Include="Fabricas\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

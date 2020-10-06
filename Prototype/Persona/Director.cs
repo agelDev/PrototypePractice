@@ -3,14 +3,14 @@ namespace Prototype.Persona
 {
     public class Director : Persona
     {
-        private Director instancia;
+        private static Director instancia;
         public string Especializacion { get; set; }
 
         private Director()
         {
         }
 
-        public Director GetInstancia()
+        public static Director GetInstancia()
         {
             return instancia ?? (instancia = new Director());
         }

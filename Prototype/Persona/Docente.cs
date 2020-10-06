@@ -1,13 +1,14 @@
 ﻿using System;
 namespace Prototype.Persona
 {
-    public class Docente
+    public class Docente : Persona
     {
         public double PagoHora { get; set; }
         public string AsignaturaImpartida { get; set; }
 
         public Docente()
         {
+
         }
 
         public void DarClase()
@@ -17,7 +18,7 @@ namespace Prototype.Persona
 
         public void EnviarEstudianteDirector(Estudiante e)
         {
-            Console.WriteLine($"El estudiante {e.Nombre} {e.Apellido} se porto mal\nA la oficina del Director !!!")
+            Console.WriteLine($"El estudiante {e.Nombre} {e.Apellido} se porto mal\nA la oficina del Director !!!");
         }
     }
 }

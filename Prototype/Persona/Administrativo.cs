@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Prototype.Persona
 {
-    public class Administrativo
+    public class Administrativo : Persona
     {
         public Administrativo()
         {
@@ -14,7 +14,7 @@ namespace Prototype.Persona
 
         public void PagarDocente(Docente d)
         {
-            Console.WriteLine($"Dando una chiripa al maestro {d.Nombre} {d.Apellido}")
+            Console.WriteLine($"Dando una chiripa al maestro {d.Nombre} {d.Apellido}");
         }
 
         public void GEstionarProgramaEducativo()
