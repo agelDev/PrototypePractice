@@ -36,6 +36,8 @@
     <Compile Include="Persona\Persona.cs" />
     <Compile Include="Persona\Curso.cs" />
     <Compile Include="Persona\Estudiante.cs" />
+    <Compile Include="Persona\Tutor.cs" />
+    <Compile Include="Persona\Director.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persona\" />

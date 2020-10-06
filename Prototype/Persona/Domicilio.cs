@@ -3,10 +3,10 @@ namespace Prototype.Persona
 {
     public class Domicilio
     {
-        private string Casa { get; set; };
-        private string Sector { get; set; };
+        public string Casa { get; set; }
+        public string Sector { get; set; }
 
-        public Domicilio(string casa, string secotr)
+        public Domicilio(string casa, string sector)
         {
             Casa = casa;
             Sector = sector;
