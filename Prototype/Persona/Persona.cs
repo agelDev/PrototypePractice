@@ -17,6 +17,7 @@ namespace Prototype.Persona
 
             set
             {
+                if (value != null)
                 if (value.Length == 10)
                     telefono = value;
             }

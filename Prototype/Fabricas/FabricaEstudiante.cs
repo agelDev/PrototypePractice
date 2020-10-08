@@ -44,6 +44,7 @@ namespace Prototype.Fabricas
 
             Curso curso = new Curso(nGrado);
 
+            Console.WriteLine("(Tutor)");
             FabricaTutor fabrica = new FabricaTutor();
             Tutor tutor = (Tutor) fabrica.CrearPersona();
 

@@ -36,6 +36,22 @@ namespace Prototype.Menu
                 case "2":
                     OpcionesListado();
                     break;
+                case "3":
+                    List<Persona.Persona> copia1 = new List<Persona.Persona>();
+                    List<Persona.Persona> copia2 = new List<Persona.Persona>();
+
+                    ListaEstudiantes.ForEach(estudiante =>
+                    {
+                        Estudiante e = (Estudiante)estudiante;
+                        copia1.Add((Persona.Persona)e.Clone("Copia 1"));
+                        copia2.Add((Persona.Persona)e.Clone("Copia 2"));
+                    });
+
+
+                    Archivar(ListaEstudiantes, "Estudiantes.json");
+                    Archivar(copia1, @"Estudiantes-Copia1.json");
+                    Archivar(copia2, @"Estudiantes-Copia2.json");
+                    break;
                 default:
                     return;
             }
